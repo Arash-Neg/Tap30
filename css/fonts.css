@@ -12,6 +12,7 @@
   src: url(/assets/fonts/Vazir-Bold.woff);
 }
 
-body {
+body,
+button {
   font-family: "Vazir";
 }
