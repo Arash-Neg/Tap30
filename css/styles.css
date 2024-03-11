@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
+  /* list-style: none; */
 }
 
 /* Root Variables */
@@ -115,5 +115,41 @@ h2 {
 @media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.4rem;
+  }
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+/* inline lists */
+.list--inline .list__item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+/* block lists - tick lists */
+/* METHOD 1
+.list--tick .list__item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/assets/images/Tick-Square.svg) no-repeat;
+  padding-right: 3rem;
+} */
+
+.list--tick .list__item {
+  background: url(/assets/images/Tick-Square.svg) no-repeat;
+  background-position: right center;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
 }
