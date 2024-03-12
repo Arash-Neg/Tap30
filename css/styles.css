@@ -243,7 +243,7 @@ h2 {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(auto, auto));
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
     gap: 10rem;
   }
 
