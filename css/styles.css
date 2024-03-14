@@ -45,6 +45,13 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 2.3rem;
+  line-height: 28px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -56,6 +63,12 @@ h2 {
   }
   h2 {
     font-size: 3.5rem;
+    margin-bottom: 1.3rem;
+  }
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    line-height: 36px;
   }
 }
 
@@ -176,6 +189,15 @@ h2 {
   gap: 5rem;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.block {
+  padding: 6rem 2.7rem;
+}
+
 .plan {
   margin-bottom: 5rem;
 
@@ -266,5 +288,39 @@ h2 {
   .plan--popular:hover {
     transform: scale(1.2);
     cursor: pointer;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.feature {
+  gap: 4rem 2rem;
+  padding: 2rem 3.5rem;
+  margin-bottom: 7rem;
+}
+
+.feature__content {
+  text-align: justify;
+}
+
+.feature__image {
+  width: 100%;
+  max-width: 55rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* order: -1; */
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature:nth-child(even) .feature__content {
+    order: -1;
+    margin-left: 4rem;
   }
 }
