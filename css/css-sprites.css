@@ -1,0 +1,20 @@
+.css-sprite-Twitter {
+  background: url("/assets/images/css-sprite-combined.2.png") 0px -10px;
+  width: 68px;
+  height: 55px;
+  display: inline-block;
+}
+
+.css-sprite-Facebook {
+  background: url("/assets/images/css-sprite-combined.2.png") -68px -0px;
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+}
+
+.css-sprite-LinkedIn {
+  background: url("/assets/images/css-sprite-combined.2.png") -133px -0px;
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+}

@@ -291,6 +291,7 @@ p {
   }
 }
 
+/* Features with different item position 🌟 */
 .grid {
   display: grid;
 }
@@ -323,4 +324,56 @@ p {
     order: -1;
     margin-left: 4rem;
   }
+}
+
+/* Contact Us */
+.contact-us {
+  display: grid;
+  text-align: center;
+}
+
+.contact-us__map {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-us {
+    display: grid;
+    grid-template-areas:
+      "contacts form"
+      "map form"
+      "socials form";
+
+    grid-template-columns: 70fr 30fr;
+  }
+  .contact-us__form {
+    grid-area: form;
+  }
+  .contact-us__contacts {
+    grid-area: contacts;
+  }
+  .contact-us__map {
+    display: block;
+    grid-area: map;
+  }
+  .contact-us__socials {
+    grid-area: socials;
+  }
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon-container {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: 0 10px 20px 1px #d6d6d6;
+  border-radius: 50%;
+  cursor: pointer;
 }
