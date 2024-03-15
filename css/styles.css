@@ -428,6 +428,13 @@ a:visited {
     display: block;
     grid-area: map;
   }
+
+  .contact-us__map img {
+    width: 100%;
+    height: auto;
+    padding-left: 5rem;
+  }
+
   .contact-us__socials {
     grid-area: socials;
   }
@@ -465,9 +472,9 @@ a:visited {
     width: var(--icon-small);
     height: var(--icon-medium);
   }
-  
+
   .contact-us__socials .icon-container {
-    width: calc(var(--icon-small) + 20px );
+    width: calc(var(--icon-small) + 20px);
     height: calc(var(--icon-small) + 20px);
   }
 }
