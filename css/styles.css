@@ -19,6 +19,11 @@
   --color-body: #333;
   --color-white: #fff;
   --color-primary-cards: #ff7a50;
+  --color-links: #374754;
+
+  /* Sizes */
+  --icon-small: 24px;
+  --icon-medium: 42px;
 }
 
 /* INITIALS */
@@ -52,6 +57,13 @@ p {
   font-size: 1.4rem;
   margin-bottom: 2.3rem;
   line-height: 28px;
+}
+a:link,
+a:visited {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-links);
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -336,6 +348,47 @@ p {
   display: none;
 }
 
+/* Icons */
+.icon {
+  width: var(--icon-small);
+  height: var(--icon-small);
+  padding: 0.2rem;
+}
+.icon-container {
+  width: calc(var(--icon-small) + 20px);
+  height: calc(var(--icon-small) + 20px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: 0 10px 10px 1px #d6d6d69d;
+  border-radius: 50%;
+}
+.icon--primary {
+  fill: #445;
+}
+
+/* Contacts */
+.contact-us__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+}
+
+.contact-us__contacts .icon-holder {
+  display: flex;
+  align-items: center;
+  margin: 1rem 1.5rem 1rem 1rem;
+}
+.icon-holder > span {
+  margin-right: 1.5rem;
+}
+.icon-number {
+  direction: ltr;
+}
+
 @media screen and (min-width: 1024px) {
   .contact-us {
     display: grid;
@@ -359,21 +412,27 @@ p {
   .contact-us__socials {
     grid-area: socials;
   }
-}
 
-/* Icons */
-.icon {
-  width: 40px;
-  height: 40px;
-}
-.icon-container {
-  width: 64px;
-  height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6f6f6;
-  box-shadow: 0 10px 10px 1px #d6d6d69d;
-  border-radius: 50%;
-  cursor: pointer;
+  /* contacts */
+
+  .contact-us__contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5rem;
+  }
+
+  .icon-holder {
+    flex-direction: column;
+  }
+
+  .icon-holder__label {
+    order: 2;
+    margin-top: 1.2rem;
+  }
+
+  .icon-holder__label a {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
 }
