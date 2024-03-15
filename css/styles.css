@@ -362,7 +362,7 @@ p {
 }
 
 /* Icons */
-/* .icon {
+.icon {
   width: 40px;
   height: 40px;
 }
@@ -376,4 +376,4 @@ p {
   box-shadow: 0 10px 10px 1px #d6d6d69d;
   border-radius: 50%;
   cursor: pointer;
-} */
+}
