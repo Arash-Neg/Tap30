@@ -547,3 +547,59 @@ input[type="email"] {
     font-weight: 500;
   }
 }
+
+/* -------- FOOTER -------- */
+
+.main-footer {
+  color: white;
+  background-color: black;
+  min-height: 250px;
+}
+
+.main-footer .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__item {
+  margin-bottom: 2rem;
+}
+
+.footer__item a {
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.footer__item h6 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1.3rem;
+}
+
+.footer__item.enamad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+}
+.footer__enamad {
+  max-width: 86px;
+}
+.footer__enamad img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-footer .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
