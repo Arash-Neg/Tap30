@@ -775,3 +775,123 @@ input[type="email"] {
     background-color: inherit;
   }
 }
+
+/* ------------- Hero Header ------------- */
+.hero-section {
+  width: 100%;
+  height: calc(100vh -61px);
+  position: relative;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-wrapper {
+  position: absolute;
+  width: 270px;
+  top: 15px;
+  right: 100px;
+  background-image: linear-gradient(
+    51deg,
+    rgba(23, 26, 60, 0.7) 5%,
+    rgba(23, 26, 60, 0.3) 95%
+  );
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__container h1,
+h2 {
+  color: #fff;
+}
+
+.hero__container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero__container h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+}
+
+.hero__container .intro-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-btn-passenger {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 52px;
+  margin: 7px;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 224px;
+  font-size: 1.4rem;
+  vertical-align: baseline;
+  border: 2px solid #fff;
+}
+
+.intro-btn-passenger a {
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro-btn-passenger p {
+  color: #fff;
+}
+
+.intro-btn-passenger.btn-white {
+  background-color: #fff;
+}
+
+.intro-btn-passenger.btn-white p {
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  .hero-wrapper {
+    height: 405px;
+    width: 528px;
+  }
+
+  .hero__container .intro-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero__container h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero__container h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+  }
+}
