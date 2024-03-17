@@ -632,7 +632,7 @@ input[type="email"] {
   so it is better to use max-height - it means we have not touched the main height 
   ✨but becareful to fix these modified options inside the desktop mode!!!!*/
   /* display: none; */
- 
+
   transition: all 0.3s ease-in-out;
 }
 
@@ -669,6 +669,35 @@ input[type="email"] {
 
 .dlButton {
   display: none;
+}
+
+/* ! Hamburger menu  */
+.nav__toggler {
+  cursor: pointer;
+}
+
+.bars {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.nav__expanded .bar-1 {
+  transform: rotate(-45deg) translate(-6px, 5px);
+  margin: 8px 0;
+}
+
+.nav.nav__expanded .bar-2 {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.nav.nav__expanded .bar-3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+  margin: 5px 0;
 }
 
 @media screen and (min-width: 768px) {
