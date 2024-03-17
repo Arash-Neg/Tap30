@@ -619,11 +619,26 @@ input[type="email"] {
 
 .nav__links {
   width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
   margin-top: 1.2rem;
   justify-content: center;
+  /* 🌟🌟we can not transition the display by default, so we can use different methods, one is to play with height amount.
+  it is not a good idea to pla with the height, because it might change later or the items inside the menu might be vairiable 
+  so it is better to use max-height - it means we have not touched the main height 
+  ✨but becareful to fix these modified options inside the desktop mode!!!!*/
+  /* display: none; */
+ 
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.nav__expanded .nav__links {
+  max-height: 100vh;
+  opacity: 1;
 }
 
 .nav__item {
@@ -652,7 +667,32 @@ input[type="email"] {
   color: var(--color-primary);
 }
 
+.dlButton {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid #dedede;
+  }
+  .nav {
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  .dlButton {
+    display: block;
+  }
+
+  .dlButton:hover {
+    transform: scale(0.97);
+  }
+
+  .btn--primary.dlButton {
+    padding: 1rem 4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
   .nav__toggler {
     display: none;
   }
@@ -662,6 +702,9 @@ input[type="email"] {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    max-height: 100%;
+    opacity: 1;
   }
   .nav__item {
     padding: 0;
