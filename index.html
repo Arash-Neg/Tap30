@@ -16,68 +16,65 @@
     <title>Tap30 Demo</title>
   </head>
   <body>
-    <section class="hero-section">
-      <picture>
-        <source
-          srcset="/assets/images/banner.webp"
-          type="image/webp"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/assets/images/banner.webp"
-          type="image/webp"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/assets/images/banner-mobile.webp"
-          type="image/webp"
-          media="(max-width: 768px)"
-        />
-        <source
-          srcset="/assets/images/banner.jpg"
-          type="image/jpg"
-          media="(max-width: 768px)"
-        />
-        <img src="/assets/images/banner.jpg" alt="banner" />
-      </picture>
-      <div class="hero-wrapper">
-        <div class="hero__container">
-          <h1>تپسی</h1>
-          <h2>اپلیکیشن درخواست خودرو و پیک</h2>
-          <div class="intro-btns">
-            <div class="intro-btn-passenger btn-white">
-              <a href="">
-                <span><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
-                <p>دانلود اپلیکیشن مسافران</p>
-              </a>
-            </div>
-            <div class="intro-btn-passenger btn-white">
-              <a href="#">
-                <span><i class="fa fa-mobile" aria-hidden="true"></i></span>
-                <p>وب اپلیکیشن مسافران</p>
-              </a>
-            </div>
-            <div class="intro-btn-passenger">
-              <a href="#">
-                <img src="" alt="" />
-                <p>ثبت‌نام راننده خودرو</p>
-              </a>
-            </div>
-            <div class="intro-btn-passenger">
-              <a href="#">
-                <img src="" alt="" />
-                <p>ثبت‌نام راننده موتور</p>
-              </a>
-            </div>
-            <div class="intro-btn-passenger">
-              <a href="#">
-                <img src="" alt="" />
-                <p>دانلود اپلیکیشن رانندگان</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="services container">
+      <nav class="services__tabs">
+        <a class="tab" id="nav-classic-tab">
+          <img
+            src="/assets/images/cc-classic.png"
+            aria-label="classic service icon"
+            alt="tapsi-classic-icon"
+          />
+          <p>تپسی کلاسیک</p>
+        </a>
+        <a class="tab" id="nav-tel-tab">
+          <img
+            src="/assets/images/cc-tel.png"
+            aria-label="tel service icon"
+            alt="tapsi-tel-icon"
+          />
+          <p>تپسی تلفنی</p>
+        </a>
+        <a class="tab" id="nav-line-tab">
+          <img
+            src="/assets/images/cc-line.png"
+            aria-label="line service icon"
+            alt="tapsi-line-icon"
+          />
+          <p>تپسی لاین</p>
+        </a>
+        <a class="tab" id="nav-motopeyk-tab">
+          <img
+            src="/assets/images/cc-motopeyk.png"
+            aria-label="motopeyk service icon"
+            alt="motopeyk-icon"
+          />
+          <p>موتوپیک</p>
+        </a>
+        <a class="tab" id="nav-autopeyk-tab">
+          <img
+            src="/assets/images/cc-autopeyk.png"
+            aria-label="autopeyk service icon"
+            alt="autopeyk-icon"
+          />
+          <p>اتوپیک</p>
+        </a>
+        <a class="tab" id="nav-plus-tab">
+          <img
+            src="/assets/images/cc-plus.png"
+            aria-label="plus service icon"
+            alt="tapsi-plus-icon"
+          />
+          <p>تپسی پلاس</p>
+        </a>
+        <a class="tab active" id="nav-hamyar-tab">
+          <img
+            src="/assets/images/cc-hamyar.png"
+            aria-label="hamyar service icon"
+            alt="hamyar-icon"
+          />
+          <p>همیار</p>
+        </a>
+      </nav>
     </section>
   </body>
 </html>

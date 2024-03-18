@@ -895,3 +895,55 @@ h2 {
     margin-bottom: 3.5rem;
   }
 }
+
+/* ------------- SERVICES TAB -------------*/
+
+.services__tabs {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 1rem 0;
+  overflow: auto;
+}
+
+.services__tabs img {
+  width: 85px;
+}
+
+.services__tabs a {
+  /* Center the text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #444;
+  max-width: 95px;
+  cursor: pointer;
+}
+
+.services__tabs p {
+  display: block;
+  margin-top: 1.3rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.services__tabs .tab {
+  opacity: 0.3;
+  transition: all 0.3s ease-out;
+}
+
+.services__tabs .tab:hover {
+  opacity: 1;
+}
+@media screen and (min-width: 1024px) {
+  .services__tabs p {
+    margin-top: 1.4rem;
+    font-size: 1.6rem;
+  }
+  .services__tabs img {
+    width: 100%;
+  }
+  .services__tabs a {
+    max-width: 120px;
+  }
+}
