@@ -903,6 +903,7 @@ h2 {
   justify-content: space-between;
   max-width: 100%;
   margin: 1rem 0;
+  padding: 5px 0 15px;
   overflow: auto;
 }
 
@@ -927,6 +928,12 @@ h2 {
   font-size: 1.4rem;
 }
 
+.services h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
 .services__tabs .tab {
   opacity: 0.3;
   transition: all 0.3s ease-out;
@@ -935,6 +942,28 @@ h2 {
 .services__tabs .tab:hover {
   opacity: 1;
 }
+
+.services .feature__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.services .feature__text {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.services .feature__image {
+  display: none;
+}
+
+.tab__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 5rem;
+}
+
 @media screen and (min-width: 1024px) {
   .services__tabs p {
     margin-top: 1.4rem;
@@ -944,6 +973,26 @@ h2 {
     width: 100%;
   }
   .services__tabs a {
-    max-width: 120px;
+    max-width: 100px;
+  }
+  .services h2 {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+  }
+
+  .services .feature {
+    gap: 0 10rem;
+  }
+  .services .feature__text {
+    font-size: 1.8rem;
+  }
+  .services .feature__image {
+    display: block;
+  }
+  .services .feature__heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
   }
 }
