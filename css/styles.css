@@ -905,6 +905,7 @@ h2 {
   margin: 1rem 0;
   padding: 5px 0 15px;
   overflow: auto;
+  position: relative;
 }
 
 .services__tabs img {
@@ -925,7 +926,7 @@ h2 {
   display: block;
   margin-top: 1.3rem;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .services h2 {
@@ -939,8 +940,31 @@ h2 {
   transition: all 0.3s ease-out;
 }
 
+.services__tabs .tab.active {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
 .services__tabs .tab:hover {
   opacity: 1;
+}
+
+.services__tabs .tab::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  bottom: 0;
+  right: 40%;
+  background-color: var(--color-primary-cards);
+  box-shadow: 0 10px 20px 1px var(--color-secondary-dark);
+  transition: all 0.3s ease-in-out;
+}
+.services__tabs .tab:active::after {
+  width: 100%;
+  right: 0;
+  background-color: var(--color-primary);
+  box-shadow: 0 5px 20px 1px rgb(4, 22, 72);
 }
 
 .services .feature__heading {
@@ -961,7 +985,64 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.tab__content {
+  display: none;
+}
+
+.tab__content.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 0 5rem;
+  animation: 0.3s ease-in-out;
+}
+
+/* Tab Content Animations */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5) rotate(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 0;
+    transform: scale(1.2) rotate(10deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -994,5 +1075,22 @@ h2 {
     font-size: 2.8rem;
     font-weight: 500;
     margin-bottom: 2rem;
+  }
+
+  .tab__content {
+    display: none;
+  }
+  .tab__content.active {
+    display: flex;
+    animation: 0.3s ease-in-out;
+  }
+  .tab__content.active .feature__text {
+    width: 95%;
+  }
+  .tab__content.active .feature__image {
+    width: 450px;
+  }
+  .tab.active {
+    opacity: 1;
   }
 }
