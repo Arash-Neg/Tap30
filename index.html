@@ -5,18 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <script src="scripts/script.js" defer></script>
     <title>Tap30 Demo</title>
   </head>
   <body>
-    <section class="services container block">
+    <!--! Navbar -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="" />
+        </a>
+        <div class="nav__toggler">
+          <div class="bars bar-1"></div>
+          <div class="bars bar-2"></div>
+          <div class="bars bar-3"></div>
+        </div>
+        <ul class="nav__links list">
+          <li class="nav__item"><a href="#">پشتیبانی</a></li>
+          <li class="nav__item"><a href="#">خدمات کسب و کارها</a></li>
+          <li class="nav__item"><a href="#">فرصت های شغلی</a></li>
+          <li class="nav__item"><a href="#">وبلاگ</a></li>
+        </ul>
+        <button class="btn btn--primary dlButton">دانلود تپسی</button>
+      </nav>
+    </header>
+
+    <!--! Hero Header -->
+    <section class="hero-section">
+      <picture>
+        <source
+          srcset="/assets/images/banner.webp"
+          type="image/webp"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/assets/images/banner.webp"
+          type="image/webp"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/assets/images/banner-mobile.webp"
+          type="image/webp"
+          media="(max-width: 768px)"
+        />
+        <source
+          srcset="/assets/images/banner.jpg"
+          type="image/jpg"
+          media="(max-width: 768px)"
+        />
+        <img src="/assets/images/banner.jpg" alt="banner" />
+      </picture>
+
+      <div class="hero-wrapper">
+        <div class="hero__container">
+          <h1>تپسی</h1>
+          <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+          <div class="intro-btns">
+            <div class="intro-btn-passenger btn-white">
+              <a href="">
+                <p>دانلود اپلیکیشن مسافران</p>
+              </a>
+            </div>
+            <div class="intro-btn-passenger btn-white">
+              <a href="#">
+                <p>وب اپلیکیشن مسافران</p>
+              </a>
+            </div>
+            <div class="intro-btn-passenger">
+              <a href="#">
+                <p>ثبت‌نام راننده خودرو</p>
+              </a>
+            </div>
+            <div class="intro-btn-passenger">
+              <a href="#">
+                <p>ثبت‌نام راننده موتور</p>
+              </a>
+            </div>
+            <div class="intro-btn-passenger">
+              <a href="#">
+                <p>دانلود اپلیکیشن رانندگان</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! Services Tabs -->
+    <section class="services container">
       <h2>سرویس های تپسی</h2>
       <nav class="services__tabs">
         <a class="tab active">
@@ -221,5 +298,273 @@
         </div>
       </article>
     </section>
+
+    <!--! Features -->
+    <section class="container block">
+      <article class="grid grid--1x2 feature">
+        <div class="feature__image">
+          <img src="/assets/images/i-mac-1.png" alt="" class="feature__image" />
+        </div>
+        <div class="feature__content">
+          <h2 class="feature_heading">خدمات تپسی برای کسب و کارها</h2>
+          <p class="feature__text">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای نرم افزار گیرد.
+          </p>
+          <button class="btn btn--primary">ورود و ثبت نام پنل سازمانی</button>
+        </div>
+      </article>
+
+      <article class="grid grid--1x2 feature">
+        <div class="feature__image">
+          <img src="/assets/images/macbook.png" alt="" class="feature__image" />
+        </div>
+        <div class="feature__content">
+          <h2 class="feature_heading">خرید کد اعتباری تپسی</h2>
+          <p class="feature__text">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای نرم افزار گیرد.
+          </p>
+          <button class="btn btn--primary">خرید کد اعتبار و تخفیف</button>
+        </div>
+      </article>
+    </section>
+
+    <!--! Cards -->
+    <div class="card container">
+      <div class="plan">
+        <div class="plan__header plan--secondary">
+          <div class="plan-type">
+            <span>عادی</span>
+            <span class="badge badge--secondary">10% off</span>
+          </div>
+          <div class="plan-price">
+            <span class="price">290,000</span><span>ماهانه/تومان</span>
+          </div>
+          <div class="plan-name">
+            <p>سرویس ماشین های معمولی</p>
+          </div>
+        </div>
+        <div class="plan__content">
+          <ul class="list list--tick">
+            <li class="list__item">کیفیت معمولی</li>
+            <li class="list__item">کیفیت معمولی</li>
+            <li class="list__item">کیفیت معمولی</li>
+            <li class="list__item">کیفیت معمولی</li>
+          </ul>
+        </div>
+        <div class="plan__submit">
+          <button class="btn btn--secondary btn--block">ثبت سفارش</button>
+        </div>
+      </div>
+
+      <div class="plan plan--popular">
+        <div class="plan__header plan--primary">
+          <div class="plan-type">
+            <span>اقتصادی</span>
+            <span class="badge badge--primary">15% off</span>
+          </div>
+          <div class="plan-price">
+            <span class="price">390,000</span><span>ماهانه/تومان</span>
+          </div>
+          <div class="plan-name">
+            <p>سرویس ماشین های کلاسیک</p>
+          </div>
+        </div>
+        <div class="plan__content">
+          <ul class="list list--tick">
+            <li class="list__item">کیفیت عالی</li>
+            <li class="list__item">کم سر و صدا</li>
+            <li class="list__item">زمان محدود</li>
+            <li class="list__item">سرویس روزانه</li>
+          </ul>
+        </div>
+        <div class="plan__submit">
+          <button class="btn btn--primary btn--block">ثبت سفارش</button>
+        </div>
+      </div>
+
+      <div class="plan">
+        <div class="plan__header plan--secondary">
+          <div class="plan-type">
+            <span>ویژه</span>
+            <span class="badge badge--secondary">20% off</span>
+          </div>
+          <div class="plan-price">
+            <span class="price">490,000</span><span>ماهانه/تومان</span>
+          </div>
+          <div class="plan-name">
+            <p>سرویس ماشین های مدل بالا</p>
+          </div>
+        </div>
+        <div class="plan__content">
+          <ul class="list list--tick">
+            <li class="list__item">کیفیت خیلی خفن</li>
+            <li class="list__item">بی سر و صدا</li>
+            <li class="list__item">زمان نامحدود</li>
+            <li class="list__item">سرویس نامحدود</li>
+          </ul>
+        </div>
+        <div class="plan__submit">
+          <button class="btn btn--secondary btn--block">ثبت سفارش</button>
+        </div>
+      </div>
+    </div>
+
+    <!--! Contacts -->
+    <div class="contact-us container block">
+      <!-- Socials -->
+      <div class="contact-us__socials">
+        <a href="https://twitter.com/Mixepilm98" target="_blank">
+          <span class="icon-container">
+            <svg class="icon">
+              <use
+                xlink:href="./assets/images/Social-media_Sprite.svg#Twitter"
+              ></use>
+            </svg>
+          </span>
+        </a>
+
+        <a href="https://www.facebook.com/arash.negahdari" target="_blank">
+          <span class="icon-container">
+            <svg class="icon">
+              <use
+                xlink:href="./assets/images/Social-media_Sprite.svg#Facebook"
+              ></use>
+            </svg>
+          </span>
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">
+          <span class="icon-container">
+            <svg class="icon">
+              <use
+                xlink:href="./assets/images/Social-media_Sprite.svg#Linkedin"
+              ></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Contacts -->
+      <div class="contact-us__contacts">
+        <div class="icon-holder">
+          <span class="icon-holder__label"
+            ><a href="mailto:arash.negahdari89@gmail.com"
+              >arash.negahdari89@gmail.com</a
+            ></span
+          >
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="./assets/images/contacts-sprite.svg#Mail"></use>
+            </svg>
+          </span>
+        </div>
+
+        <div class="icon-holder">
+          <span class="icon-number icon-holder__label"
+            ><a href="tel:+989334198084">+98-933-419-8084</a></span
+          >
+          <span class="icon-container">
+            <svg class="icon">
+              <use
+                xlink:href="./assets/images/contacts-sprite.svg#Mobile"
+              ></use>
+            </svg>
+          </span>
+        </div>
+
+        <div class="icon-holder">
+          <span class="icon-holder__label"
+            ><a
+              href="http://maps.google.com/?q=ایران فارس شیراز"
+              target="_blank"
+              >ایران - فارس - شیراز</a
+            ></span
+          >
+          <span class="icon-container">
+            <svg class="icon">
+              <use
+                xlink:href="./assets/images/contacts-sprite.svg#Location"
+              ></use>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-us__form">
+        <div class="form-wrapper">
+          <h3>نظرات شما</h3>
+          <form>
+            <input type="text" placeholder="نام نام خانوادگی" />
+            <input type="email" placeholder="آدرس ایمیل" />
+            <textarea cols="22" rows="10" placeholder="نظر شما"></textarea>
+            <button class="btn btn--primary">ثبت نظر</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="contact-us__map">
+        <img src="./assets/images/map.png" alt="Contact Us Location" />
+      </div>
+    </div>
+
+    <!--! Footer -->
+    <div class="main-footer">
+      <div class="container footer">
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="#">وبلاگ تپسی</a>
+          <a href="#">فرصت شغلی</a>
+          <a href="#">تماس با ما</a>
+          <a href="#">لوگو و هویت سازی</a>
+        </div>
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="#">وبلاگ تپسی</a>
+          <a href="#">فرصت شغلی</a>
+          <a href="#">تماس با ما</a>
+          <a href="#">لوگو و هویت سازی</a>
+        </div>
+        <div class="footer__item">
+          <h6>مسافران</h6>
+          <a href="#">دانلود اپ مسافر</a>
+          <a href="#">نسخه وب تپسی</a>
+          <a href="#">پرسش های متداول مسافران</a>
+          <a href="#">باشگاه مشتریان</a>
+        </div>
+        <div class="footer__item">
+          <h6>رانندگان</h6>
+          <a href="#">ثبت نام راننده تاکسی</a>
+          <a href="#">دانلود اپ سفیر</a>
+          <a href="#">پرسش های متداول سفیران</a>
+          <a href="#">باشگاه مشتریان</a>
+        </div>
+        <div class="footer__item">
+          <h6>کسب و کارها</h6>
+          <a href="#">پنل سازمانی تپسی</a>
+          <a href="#">خرید کد اعتبار و تپسی</a>
+          <a href="#">API دریافت</a>
+          <a href="#">شرایط و قوانین</a>
+        </div>
+        <div class="footer__item enamad">
+          <div class="footer__enamad">
+            <img src="./assets/images/enemad.png" alt="" />
+          </div>
+          <div class="footer__enamad">
+            <img src="./assets/images/enemad.png" alt="" />
+          </div>
+          <div class="footer__enamad">
+            <img src="./assets/images/enemad.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
