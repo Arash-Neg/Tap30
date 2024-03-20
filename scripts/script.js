@@ -1,13 +1,13 @@
-// const toggler = document.querySelector(".nav__toggler");
-// const navbar = document.querySelector(".nav");
+const toggler = document.querySelector(".nav__toggler");
+const navbar = document.querySelector(".nav");
 
 /* Nav Toggler */
-/* toggler.addEventListener("click", (e) => {
+toggler.addEventListener("click", (e) => {
   navbar.classList.toggle("nav__expanded");
 });
- */
+
 let currentAnimation = 1;
-/* Services Tab and Content Animations */
+//  Services Tab and Content Animations
 const tabs = document.querySelectorAll(".tab");
 const tabContents = document.querySelectorAll(".tab__content");
 

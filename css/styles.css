@@ -38,6 +38,15 @@ body,
   font-weight: 700;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.block {
+  padding: 6rem 1.7rem;
+}
+
 h1,
 h2,
 h3 {
@@ -193,21 +202,12 @@ a:visited {
 
 /* CARDS */
 .card {
-  max-width: 500px;
+  max-width: 300px;
   margin: 5rem auto;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(450px, auto));
   gap: 5rem;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.block {
-  padding: 6rem 2.7rem;
 }
 
 .plan {
@@ -278,15 +278,17 @@ a:visited {
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(450px, auto));
-    gap: 10rem;
+    /* gap: 10rem; */
+    transform: scale(0.85);
   }
 
   .plan {
     transition: all 0.25s;
+    transform: scale(0.75);
   }
 
   .plan:hover {
-    transform: scale(1.2);
+    transform: scale(0.85);
     cursor: pointer;
   }
 
@@ -295,10 +297,40 @@ a:visited {
   } 
   OR*/
   .plan--popular {
-    transform: scale(1.1);
+    transform: scale(0.95);
   }
   .plan--popular:hover {
-    transform: scale(1.2);
+    transform: scale(1);
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 1566px) {
+  .card {
+    max-width: 100%;
+    margin-top: 8rem;
+    /* transform: scale(0.9); */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    /* gap: 10rem; */
+    transform: scale(0.8);
+  }
+
+  .plan {
+    transition: all 0.25s;
+    transform: scale(1);
+  }
+
+  .plan:hover {
+    transform: scale(1);
+    cursor: pointer;
+  }
+  .plan--popular {
+    transform: scale(1);
+  }
+  .plan--popular:hover {
+    transform: scale(1);
     cursor: pointer;
   }
 }
@@ -842,7 +874,6 @@ h2 {
   width: 100%;
   max-width: 224px;
   font-size: 1.4rem;
-  vertical-align: baseline;
   border: 2px solid #fff;
 }
 
@@ -853,6 +884,7 @@ h2 {
 
 .intro-btn-passenger p {
   color: #fff;
+  margin: 0 auto;
 }
 
 .intro-btn-passenger.btn-white {
@@ -866,7 +898,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .hero-section {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
   }
 
