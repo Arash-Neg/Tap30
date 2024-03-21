@@ -286,7 +286,6 @@ a:visited {
     transition: all 0.25s;
     transform: scale(0.75);
   }
-
   .plan:hover {
     transform: scale(0.85);
     cursor: pointer;
