@@ -1172,9 +1172,15 @@ h2 {
   margin-left: 2rem;
 }
 
+.slide__image {
+  width: 300px;
+  height: 200px;
+  transition: all 0.3s ease;
+}
+
 .slide__image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   border-radius: 3.2rem;
 }
@@ -1226,5 +1232,10 @@ h2 {
 @media screen and (min-width: 768px) {
   .travel__slide:not(:last-child) {
     margin-left: 4rem;
+  }
+  .slide__image {
+    width: 335px;
+    height: 236px;
+    transition: all 0.3s ease-in-out;
   }
 }
