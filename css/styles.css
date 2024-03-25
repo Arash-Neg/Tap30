@@ -1137,6 +1137,7 @@ h2 {
   align-items: center;
   overflow-x: auto;
   padding: 5.5rem 6.3rem;
+  cursor: pointer;
 }
 
 .travel__slides::-webkit-scrollbar {
@@ -1156,7 +1157,6 @@ h2 {
 .travel__slide:hover {
   animation: breath 1s ease-in-out infinite alternate;
 }
-
 
 @keyframes breath {
   from {
@@ -1224,7 +1224,7 @@ h2 {
   margin-left: 0.7rem;
 }
 @media screen and (min-width: 768px) {
-  .travell__slide:not(:last-child) {
+  .travel__slide:not(:last-child) {
     margin-left: 4rem;
   }
 }
