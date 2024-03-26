@@ -40,3 +40,15 @@ tabs.forEach((tab, index) => {
     currentAnimation = currentAnimation < 4 ? currentAnimation + 1 : 1;
   });
 });
+
+const accordionHeaders = document.querySelectorAll(".accordion__header");
+const accordion = document.querySelectorAll(".accordion");
+
+accordionHeaders.forEach((item, index) => {
+  item.addEventListener("click", (e) => {
+    accordion.forEach((accord) =>
+      accord.classList.remove("accordion__expanded")
+    );
+    accordion[index].classList.toggle("accordion__expanded");
+  });
+});
